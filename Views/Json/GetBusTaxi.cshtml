@@ -1,0 +1,89 @@
+﻿@model IEnumerable<JsonDownload.Models.BusTaxi>
+
+@{
+    ViewBag.Title = "GetBusTaxi";
+}
+
+<h2>GetBusTaxi</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.company)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.imgSrc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.zone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.route)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.shift)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tel)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.company)
+        </td>
+        <td>
+            <a href="@item.imgSrc" target="_blank"><img src="@item.imgSrc" style="width:200px;height:150px;" /></a>
+        </td>
+        <td>
+            @foreach (var arrayItem in item.zone)
+            {
+                <div>
+                    @arrayItem <br />
+                </div>
+            }
+        </td>
+        <td>
+            @foreach (var arrayItem in item.route)
+            {
+                <div>
+                    @arrayItem <br />
+                </div>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.length)
+        </td>
+        <td>
+            @foreach (var arrayItem in item.shift)
+            {
+                <div>
+                    @arrayItem <br />
+                </div>
+            }
+        </td>
+        <td>
+            @foreach (var arrayItem in item.tel)
+            {
+                <div>
+                    @arrayItem <br />
+                </div>
+            }
+        </td>
+    </tr>
+}
+
+</table>

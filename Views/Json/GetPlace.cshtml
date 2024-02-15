@@ -1,0 +1,232 @@
+﻿@model IEnumerable<JsonDownload.Models.TravelPlace>
+
+@{
+    ViewBag.Title = "GetPlace";
+}
+
+<h2>GetPlace</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name_c)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Grade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Add)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zipcode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Town)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gov)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Website)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picture1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picdescribe1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picture2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picdescribe2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picture3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picdescribe3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Px)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Py)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Class)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Map)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Spec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Serviceinfo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Parkinginfo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalNumberofRooms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LowestPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CeilingPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaiwanHost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IndustryEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalNumberofPeople)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccessibilityRooms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublicToilets)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LiftingEquipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParkingSpace)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name_c)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Grade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Add)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zipcode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Town)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gov)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Website)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picture1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picdescribe1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picture2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picdescribe2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picture3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picdescribe3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Px)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Py)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Class)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Map)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Spec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Serviceinfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Parkinginfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalNumberofRooms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LowestPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CeilingPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaiwanHost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IndustryEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalNumberofPeople)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessibilityRooms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublicToilets)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LiftingEquipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParkingSpace)
+        </td>
+    </tr>
+}
+
+</table>
