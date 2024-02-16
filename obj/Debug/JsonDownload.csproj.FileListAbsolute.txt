@@ -84,3 +84,7 @@ C:\JasonH\VisaulStudioProgram\practice\ASPNET\NetMVC\JsonDownload\obj\Debug\Json
 C:\JasonH\VisaulStudioProgram\practice\ASPNET\NetMVC\JsonDownload\obj\Debug\JsonDownload.csproj.CopyComplete
 C:\JasonH\VisaulStudioProgram\practice\ASPNET\NetMVC\JsonDownload\obj\Debug\JsonDownload.dll
 C:\JasonH\VisaulStudioProgram\practice\ASPNET\NetMVC\JsonDownload\obj\Debug\JsonDownload.pdb
+C:\JasonH\VisaulStudioProgram\practice\ASPNET\NetMVC\JsonDownload\bin\PagedList.dll
+C:\JasonH\VisaulStudioProgram\practice\ASPNET\NetMVC\JsonDownload\bin\PagedList.Mvc.dll
+C:\JasonH\VisaulStudioProgram\practice\ASPNET\NetMVC\JsonDownload\bin\PagedList.xml
+C:\JasonH\VisaulStudioProgram\practice\ASPNET\NetMVC\JsonDownload\bin\PagedList.Mvc.xml
