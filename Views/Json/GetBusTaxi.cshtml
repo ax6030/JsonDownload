@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<JsonDownload.Models.BusTaxi>
-
+@using PagedList;
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "GetBusTaxi";
 }
@@ -87,3 +88,5 @@
 }
 
 </table>
+
+@Html.PagedListPager((IPagedList)Model, x => Url.Action("GetBusTaxi", new { page = x}))
